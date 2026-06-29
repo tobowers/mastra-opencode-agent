@@ -1,4 +1,4 @@
-# mastra-opencode
+# mastra-opencode-agent
 
 Use OpenCode as a [Mastra SDK agent](https://mastra.ai/docs/agents/sdk-agents).
 
@@ -7,21 +7,21 @@ This package wraps the OpenCode JS SDK in a Mastra-compatible agent with `genera
 ## Install
 
 ```bash
-npm install mastra-opencode @mastra/core @opencode-ai/sdk
+npm install mastra-opencode-agent @mastra/core @opencode-ai/sdk
 ```
 
 ```bash
-pnpm add mastra-opencode @mastra/core @opencode-ai/sdk
+pnpm add mastra-opencode-agent @mastra/core @opencode-ai/sdk
 ```
 
 ```bash
-bun add mastra-opencode @mastra/core @opencode-ai/sdk
+bun add mastra-opencode-agent @mastra/core @opencode-ai/sdk
 ```
 
 ## Create An Agent
 
 ```ts
-import { OpenCodeSDKAgent } from "mastra-opencode";
+import { OpenCodeSDKAgent } from "mastra-opencode-agent";
 
 export const opencodeAgent = new OpenCodeSDKAgent({
   id: "opencode-agent",
@@ -99,7 +99,7 @@ Pass a client if your app already manages the OpenCode server lifecycle:
 
 ```ts
 import { createOpencode } from "@opencode-ai/sdk";
-import { OpenCodeSDKAgent } from "mastra-opencode";
+import { OpenCodeSDKAgent } from "mastra-opencode-agent";
 
 const opencode = await createOpencode();
 

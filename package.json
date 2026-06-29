@@ -1,5 +1,5 @@
 {
-  "name": "mastra-opencode",
+  "name": "mastra-opencode-agent",
   "version": "0.1.0",
   "description": "Use OpenCode as a Mastra SDK agent.",
   "type": "module",
@@ -24,6 +24,14 @@
     "dist",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobowers/mastra-opencode-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tobowers/mastra-opencode-agent/issues"
+  },
+  "homepage": "https://github.com/tobowers/mastra-opencode-agent#readme",
   "scripts": {
     "build": "bun build ./src/index.ts --outfile ./dist/index.js --target node --format esm --external @mastra/core --external @opencode-ai/sdk && bun build ./src/index.ts --outfile ./dist/index.cjs --target node --format cjs --external @mastra/core --external @opencode-ai/sdk && tsc -p tsconfig.build.json --emitDeclarationOnly",
     "test": "bun test",
